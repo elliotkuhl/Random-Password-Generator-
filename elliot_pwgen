@@ -1,0 +1,46 @@
+import random
+import string
+
+x=string.ascii_uppercase
+y=string.ascii_lowercase
+z = ""
+symbols = "!@#$%^&*()_+!~"
+
+for i in range(0, 9):
+    z += str(i)
+
+few_uppercase = ""
+for i in range(2):
+    few_uppercase += random.choice(x)
+
+#print(few_uppercase)
+
+few_lowercase = ""
+for i in range(3):
+    few_lowercase += random.choice(y)
+
+#print(few_lowercase)
+
+few_numbers = ""
+for i in range(2):
+    few_numbers += random.choice(z)
+
+#print(few_numbers)
+
+few_symbols = ""
+for i in range(1):
+    few_symbols += random.choice(symbols)
+
+#print(few_symbols)
+
+collection = []
+collection.append(few_numbers)
+collection.append(few_lowercase)
+collection.append(few_uppercase)
+collection.append(few_symbols)
+collection = ''.join(collection)
+
+#print("collection", collection)
+
+password = ''.join(random.sample(collection,len(collection)))
+print(password)
