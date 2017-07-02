@@ -1,0 +1,62 @@
+import random
+import string
+
+min=1
+max=2
+marco = ""
+
+x=string.ascii_uppercase
+
+full_list = ""
+for i in x:
+    full_list += i
+
+marco = ""
+
+while len(marco) <= max:
+    marco += random.choice(full_list)
+print(marco)
+
+import random
+import string
+
+min=1
+max=2
+margo = ""
+
+x=string.ascii_lowercase
+
+full_list = ""
+for i in x:
+    full_list += i
+
+margo = ""
+
+while len(margo) <= max:
+    margo += random.choice(full_list)
+print(margo)
+
+import random
+
+min=1
+max=2
+richard = ""
+richard==list
+
+print(random.randint(0,9))
+i==print(random.randint(0,9))
+r=(10)
+
+import random
+
+min=1
+max=2
+ricky = ""
+ricky==list
+
+print(random.randint(0,9))
+i==print(random.randint(0,9))
+a=(5)
+
+password=[marco,margo,r,a]
+print(password)
